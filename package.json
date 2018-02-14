@@ -1,0 +1,23 @@
+{
+  "name": "logos",
+  "version": "1.0.0",
+  "homepage": "https://jaywcjlove.github.io/logos",
+  "description": "",
+  "scripts": {
+    "start": "gh-pages -d img",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaywcjlove/logo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaywcjlove/logo/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
