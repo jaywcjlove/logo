@@ -1,7 +1,7 @@
 {
-  "name": "logos",
+  "name": "logo",
   "version": "1.0.0",
-  "homepage": "https://jaywcjlove.github.io/logos",
+  "homepage": "https://jaywcjlove.github.io/logo",
   "description": "",
   "scripts": {
     "start": "gh-pages -d img",
