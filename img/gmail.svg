@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" style="background:#fff" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="gmail-a" x1="17.992%" x2="81.886%" y1="50.009%" y2="50.009%">
+      <stop offset="0%" stop-color="#F8F6EF"/>
+      <stop offset="100%" stop-color="#E7E4D6"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(34 65)">
+    <path d="M207,169 L207.1415,169 M207.1415,169 L207,169"/>
+    <path fill="#E75A4D" fill-rule="nonzero" d="M213.909575,0 C224.408971,0 233,8.61142652 233,19.135975 L233,24.68348 L206.477361,43.6744162 L116.181969,106.023537 L25.8865777,43.041952 L25.8865777,169 L19.0904251,169 C8.59102883,169 0,160.388756 0,149.864208 L0,19.1412791 C-2.26882019e-15,8.61654769 8.59102883,0.00512116778 19.0904251,0.00512116778 L116.181969,72.1632897 L213.904284,0.00512116778 L213.909575,0 Z"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="#E7E4D7" fill-rule="nonzero" points="26 43 26 169 207 169 207 43.633 116.497 106.003"/>
+    <polygon fill="#B8B7AE" fill-rule="nonzero" points="26 168 116 105.289 115.593 105 26 166.622"/>
+    <polygon fill="#B7B6AD" fill-rule="nonzero" points="205.949 44 206 169 116 106.187"/>
+    <path fill="#B2392F" fill-rule="nonzero" d="M232.969622,25.0051099 L233,149.926459 C232.554343,163.811232 226.663414,168.767133 207.05057,169 L207,43.9492606 L232.974626,25 L232.969622,25.0051099 Z"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="url(#gmail-a)" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+    <polygon fill="#F7F5ED" fill-rule="nonzero" points="19 0 116.182 72 214 0"/>
+  </g>
+</svg>
