@@ -38,7 +38,7 @@ const imgPath = path.join(__dirname, 'img');
       text-align: left;
       display: block;
       font-size: 12px;
-      background: #e4e4e4;
+      background: #f5f5f5;
       border-radius: 3px;
       padding: 1px 3px;
     }
@@ -66,6 +66,7 @@ const imgPath = path.join(__dirname, 'img');
   </style>
 </head>
 <body>
+  <h1>Github: <a target="_blank" href="https://github.com/jaywcjlove/logo">@jaywcjlove/logo</a></h1>
   ${data.join('')}
 </body>
 </html>
