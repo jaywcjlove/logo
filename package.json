@@ -1,10 +1,11 @@
 {
   "name": "logo",
   "version": "1.0.0",
+  "private": true,
   "homepage": "https://jaywcjlove.github.io/logo",
   "description": "",
   "scripts": {
-    "start": "gh-pages -d img",
+    "start": "node create.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,12 +13,12 @@
     "url": "git+https://github.com/jaywcjlove/logo.git"
   },
   "keywords": [],
+  "engines": {
+    "node": ">=12.14.0"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jaywcjlove/logo/issues"
-  },
-  "dependencies": {
-    "gh-pages": "^1.1.0"
   }
 }

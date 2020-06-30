@@ -7,6 +7,7 @@
 
 Chrome 插件 [oscnews](https://github.com/jaywcjlove/oscnews) 的子仓库，存储网址导航 logo 的仓库。
 
+预览所有 logo 图标：http://jaywcjlove.github.io/logo/
 
 ## Chrome插件
 

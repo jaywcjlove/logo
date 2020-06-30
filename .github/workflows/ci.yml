@@ -15,7 +15,7 @@ jobs:
         node-version: 12
         registry-url: https://registry.npmjs.org/
 
-
+    - run: npm run start
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
