@@ -9,7 +9,7 @@ const imgPath = path.join(__dirname, 'img');
   for await (const dirent of dir) {
     const extname = path.extname(dirent.name || '');
     if (/(svg|jpg|png)/.test(extname)) {
-      data.push(`<span class="${extname.replace(/^\./, '')}" data-ext="${extname}" data-name="${dirent.name}"><img src="${dirent.name}" width="88" alt="${(dirent.name).replace(/.(svg|jpg|png)$/, '')}" /></span>`);
+      data.push(`<span class="${extname.replace(/^\./, '')}" data-ext="${extname}" data-name="${dirent.name}"><img src="${dirent.name}" width="88" alt="${(dirent.name).replace(/.(svg|jpg|png)$/, '')}" /><i>${dirent.name}</i></span>`);
     }
   }
 
@@ -34,7 +34,7 @@ const imgPath = path.join(__dirname, 'img');
       margin: 5px 5px;
       padding: 5px;
     }
-    span::before, span::after {
+    span::before, span i {
       text-align: left;
       display: block;
       font-size: 12px;
@@ -46,9 +46,10 @@ const imgPath = path.join(__dirname, 'img');
       content: attr(data-ext);
       margin-bottom: 5px;
     }
-    span::after {
+    span i {
       content: attr(data-name);
       margin-top: 5px;
+      font-style: initial;
     }
     span.svg { border: 1px solid var(--svg-color); }
     span.svg::before {
