@@ -42,10 +42,7 @@ const imgPath = path.join(__dirname, 'img');
       border-radius: 3px;
       padding: 1px 3px;
     }
-    span::before {
-      content: attr(data-ext);
-      margin-bottom: 5px;
-    }
+    span::before { content: attr(data-ext); margin-bottom: 5px; }
     span i {
       content: attr(data-name);
       margin-top: 5px;
@@ -60,14 +57,47 @@ const imgPath = path.join(__dirname, 'img');
       background: var(--png-color);
     }
     span.jpg { border: 1px solid var(--jpg-color); }
-    span.jpg::before {
-      background: var(--jpg-color);
-    }
+    span.jpg::before { background: var(--jpg-color); }
+    form { display: flex; padding: 10px 0 0 0; justify-content: center; }
+    form label { display: flex; align-items: center; }
   </style>
 </head>
 <body>
+  <form id="form">
+    <label>
+      <input type="checkbox" name="checkbox" value=".jpg" checked /> jpg
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox" value=".svg" checked /> svg
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox" value=".png" checked /> png
+    </label>
+    <label>
+      <input type="search" name="search" />
+    </label>
+  </form>
   <h1>Github: <a target="_blank" href="https://github.com/jaywcjlove/logo">@jaywcjlove/logo</a></h1>
-  ${data.join('')}
+  <div id="content">
+    ${data.join('')}
+  </div>
+  <script type="text/javascript" src="https://unpkg.com/validator.tool/dist/validator.min.js"></script>
+  <script type="text/javascript">
+  var validator = new Validator({
+    form: document.getElementById('form'),
+  });
+  var content = document.getElementById('content');
+  var childs = [...content.children];
+  validator.form.onchange = handleChange;
+  validator.form.oninput = handleChange;
+  function handleChange() {
+    var data = validator.getValues();
+    var exts = data.checkbox || [];
+    var arr = Array.from(childs).map(elm => exts.includes(elm.dataset.ext) && elm).filter(Boolean).filter((elm) => elm.dataset.name.indexOf(data.search) > -1);
+    content.innerHTML = '';
+    arr.forEach(elm => content.appendChild(elm));
+  }
+  </script>
 </body>
 </html>
   `;
