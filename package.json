@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://jaywcjlove.github.io/logo",
+  "funding": "https://jaywcjlove.github.io/#/sponsor",
   "description": "",
   "scripts": {
     "start": "node create.js",
