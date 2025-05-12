@@ -25,7 +25,7 @@ const imgPath = path.join(__dirname, 'img');
       --png-color: #e2b0ea;
       --svg-color: #ffd967;
     }
-    body { text-align: center; margin: 0; }
+    body { text-align: center; margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; }
     img { width: 88px; display: block; margin: 0 auto; }
     span { 
       display: inline-block;
